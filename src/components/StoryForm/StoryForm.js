@@ -109,7 +109,7 @@ function StoryForm({ isOpen, onClose, loading, setLoading }) {
               </form>
             </>
           ) : (
-            <SuccessInfo reset={resetModal} userType={userType} />
+            <SuccessInfo reset={resetModal} />
           )}
         </ModalBody>
       </ModalContent>

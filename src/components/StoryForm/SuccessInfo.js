@@ -3,7 +3,7 @@ import { Box, Button, Image, Text, VStack } from '@chakra-ui/react';
 import SuccessIcon from '../../assets/images/success-icon.png';
 import FormHeader from './FormHeader';
 
-function SuccessInfo({ userType, reset }) {
+function SuccessInfo({ reset }) {
   return (
     <VStack>
       <Box>
@@ -12,9 +12,8 @@ function SuccessInfo({ userType, reset }) {
       <Box mx='auto' px={['8', '24']} textAlign='center' mb='8'>
         <FormHeader text='Thank you for sharing your story!' success />
         <Text lineHeight={['26px', '28px']}>
-          You can view your story in the{' '}
-          {userType === 'VENDOR' ? "vendors'" : "customers'"} testimonials
-          section on the homepage.
+          You can view your story in the users' testimonials section on the
+          homepage.
         </Text>
       </Box>
       <Button
