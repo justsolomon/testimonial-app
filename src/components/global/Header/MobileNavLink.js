@@ -1,13 +1,15 @@
 import React from 'react';
 import { Link } from '@chakra-ui/react';
 
-function NavLink({ linkText }) {
+function MobileNavLink({ linkText }) {
   return (
     <Link
       href='#'
-      color='#242120'
-      fontSize='13px'
-      lineHeight='15px'
+      color='gray.600'
+      fontWeight='medium'
+      fontSize='17px'
+      mb='1'
+      w='100%'
       _hover={{ color: 'brand.500' }}
       _focus={{ color: 'brand.500' }}
     >
@@ -16,4 +18,4 @@ function NavLink({ linkText }) {
   );
 }
 
-export default NavLink;
+export default MobileNavLink;

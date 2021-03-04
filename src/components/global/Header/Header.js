@@ -1,20 +1,24 @@
-import { Box, HStack, Image, Link } from '@chakra-ui/react';
-import Logo from '../../../assets/images/logo.svg';
 import React from 'react';
+import { Box, HStack } from '@chakra-ui/react';
 import BottomNav from './BottomNav';
 import { useMediaQuery } from '@chakra-ui/react';
 import TopNav from './TopNav';
+import AppLogo from './AppLogo';
+import MobileNav from './MobileNav';
 
 function Header() {
   const [isMobile] = useMediaQuery('(max-width: 48em)');
 
   return (
     <Box as='header' mb='8'>
-      <HStack py='4' px={['6', '12', , '32']} justify='space-between'>
-        <Link href='#'>
-          <Image src={Logo} />
-        </Link>
-
+      <HStack
+        py='4'
+        px={['6', '12', , '32']}
+        justify='space-between'
+        align='flex-start'
+      >
+        <AppLogo />
+        <MobileNav />
         {!isMobile && <TopNav />}
       </HStack>
       {!isMobile && <BottomNav />}
