@@ -5,7 +5,7 @@ import {
   InstagramIcon,
   LinkedInIcon,
   TwitterIcon,
-} from '../../assets/icons/allIcons';
+} from '../../../assets/icons/allIcons';
 import FooterLink from './FooterLink';
 
 function FooterSocialLinks() {

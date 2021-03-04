@@ -72,8 +72,8 @@ export const CloseIcon = createIcon({
         d='M6 6L18 18'
         stroke='black'
         stroke-width='2'
-        strokeLineCap='round'
-        strokeLineJoin='round'
+        strokeLinecap='round'
+        strokeLinejoin='round'
       />
     </>
   ),

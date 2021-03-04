@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   Box,
-  HStack,
   Image,
   Stack,
   Tag,
@@ -39,13 +38,14 @@ function TestimonialBlock({
         mirror ? 'row-reverse' : 'row',
       ]}
       bg={bg}
-      h={['unset', '500px']}
+      h={['unset', , , , '500px']}
       overflowY='hidden'
-      px={['6', '32']}
-      pt={['10', '0']}
+      px={['6', , '12', '32']}
+      pt={['10', , , , '0']}
       justify='space-between'
+      alignItems='center'
     >
-      <Box w={['100%', '50%']} mt={['8', '24']}>
+      <Box w={['100%', , '45%', , '50%']} mt={['8', '24']}>
         <Image
           src={img}
           alt={alt}
@@ -55,15 +55,15 @@ function TestimonialBlock({
         />
       </Box>
       <VStack
-        w={['100%', '45%']}
+        w={['100%', , '60%', '45%']}
         alignItems='flex-start'
         color={descriptionColor}
         px='4'
       >
         <Text
           fontWeight='bold'
-          fontSize={['24px', '32px']}
-          lineHeight={['29px', '39px']}
+          fontSize={['24px', , '28px', '32px']}
+          lineHeight={['29px', , '34px', '39px']}
           pb={['3', '0']}
         >
           {heading}
@@ -82,12 +82,12 @@ function TestimonialBlock({
         </Tag>
         <Text
           fontSize={['16px', '18px']}
-          py={['4', '8']}
+          py={['4', , '6', , '8']}
           lineHeight={['24px', '150%']}
         >
           {description}
         </Text>
-        <Box mb={['8', '0']}>
+        <Box mb={['8', , , , '0']}>
           <Text
             letterSpacing='0.2em'
             color={buttonColor}

@@ -4,7 +4,7 @@ import NavLink from './NavLink';
 
 function TopNav() {
   return (
-    <HStack spacing='10'>
+    <HStack spacing={[, , '6', '10']}>
       <NavLink linkText='ABOUT US' />
       <NavLink linkText='STORIES' />
       <NavLink linkText='CONTACT' />

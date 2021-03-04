@@ -5,9 +5,9 @@ import TestimonialCard from './TestimonialCard';
 function TestimonialCardList({ testimonials }) {
   return (
     <Grid
-      templateColumns={['repeat(1, 1fr)', 'repeat(3, 1fr)']}
-      gap={[0, 10]}
-      px={['6', '32']}
+      templateColumns={['repeat(1, 1fr)', , 'repeat(2, 1fr)', 'repeat(3, 1fr)']}
+      gap={[0, , 8, 10]}
+      px={['6', , '12', '32']}
       mt={['12', '16']}
     >
       {testimonials.map((testimonial, index) => (

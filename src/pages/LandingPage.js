@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import Header from '../components/Header/Header';
 import Hero from '../components/Hero/Hero';
 import TestimonialBlock from '../components/TestimonialBlock/TestimonialBlock';
 import ToluAndJoyImage from '../assets/images/tolu-and-joy.png';
@@ -8,10 +7,10 @@ import JosiahMobileImage from '../assets/images/josiah-mobile.png';
 import TestimonialCardList from '../components/TestimonialCard/TestimonialCardList';
 import customerTestimonials from '../utils/customerTestimonials';
 import vendorTestimonials from '../utils/vendorTestimonials';
-import Footer from '../components/Footer/Footer';
-import { Box, useDisclosure } from '@chakra-ui/react';
+import { useDisclosure } from '@chakra-ui/react';
 import StoryForm from '../components/StoryForm/StoryForm';
 import useStorage from '../hooks/useStorage';
+import Layout from '../components/global/Layout/Layout';
 
 function LandingPage() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -38,8 +37,7 @@ function LandingPage() {
   }, [loading]);
 
   return (
-    <Box>
-      <Header />
+    <Layout>
       <Hero />
       <TestimonialBlock
         imgSrc={ToluAndJoyImage}
@@ -63,14 +61,13 @@ function LandingPage() {
         mirror
       />
       <TestimonialCardList testimonials={vendorData} />
-      <Footer />
       <StoryForm
         isOpen={isOpen}
         onClose={onClose}
         loading={loading}
         setLoading={setLoading}
       />
-    </Box>
+    </Layout>
   );
 }
 

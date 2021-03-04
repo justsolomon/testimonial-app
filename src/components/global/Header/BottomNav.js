@@ -5,10 +5,10 @@ import NavLink from './NavLink';
 function BottomNav() {
   return (
     <HStack
-      spacing='16'
+      spacing={[, , '12', '16']}
       justify='space-between'
       py='4'
-      px='60'
+      px={[, , '16', '60']}
       boxShadow='1px 4px 4px rgba(0, 0, 0, 0.04)'
       borderWidth='1px'
       borderColor='rgba(0, 0, 0, 0.08)'

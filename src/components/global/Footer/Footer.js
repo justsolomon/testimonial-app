@@ -10,21 +10,31 @@ import {
   Text,
   VStack,
 } from '@chakra-ui/react';
-import FooterHero from '../../assets/images/footer-hero-image.png';
+import FooterHero from '../../../assets/images/footer-hero-image.png';
 import FooterSectionList from './FooterSectionList';
 
 function Footer() {
   return (
-    <Box bg='#25201D' color='white' px={['6', '32']} mt='12' pt={['12', '0']}>
-      <HStack justify='space-between' px={['0', '16']}>
-        <Box mt='-12' display={['none', 'block']}>
-          <Image src={FooterHero} alt='Footer Hero Illustration' />
+    <Box
+      bg='#25201D'
+      color='white'
+      px={['6', , '12', , '32']}
+      mt='12'
+      pt={['12', , '0']}
+    >
+      <HStack justify='space-between' px={['0', , , '8', '16']}>
+        <Box mt='-12' display={['none', , 'block']}>
+          <Image
+            src={FooterHero}
+            alt='Footer Hero Illustration'
+            w={[, , '100%', 'unset']}
+          />
         </Box>
-        <VStack w={['100%', '38%']}>
+        <VStack w={['100%', , '38%']}>
           <Text
             fontWeight='bold'
-            lineHeight={['28px', '40px']}
-            fontSize={['26px', '40px']}
+            lineHeight={['28px', , '32px', '40px']}
+            fontSize={['26px', , '32px', '40px']}
             mb='2'
           >
             Be a member of our community 🎉

@@ -1,3 +1,4 @@
+import React from 'react';
 import { ChakraProvider } from '@chakra-ui/react';
 import 'focus-visible/dist/focus-visible';
 import customTheme from '../components/global/customTheme';
